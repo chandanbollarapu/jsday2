@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+    <body>
+        <form name="myform" onsubmit="return myFunction()">
+      number:<input type="number" id="number" value="">
+            <input type="submit" value="calculate">
+            <p id="answer"> </p>
+        </form>
+    </body>
+    <script>
+        function myFunction(){
+           var a=document.getElementById("number").value;  
+        
+               
+               document.getElementById("answer").innerHTML = a*a;
+            return false;
+}
+        
+        
+    </script>
+</html>

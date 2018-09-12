@@ -1,0 +1,48 @@
+<html>
+<head>
+</head>
+<body>
+    <form name="form" onsubmit="return myFunction()">
+        mobile number:<input type="text" id="mobilenumber">
+       
+       <input type="submit" >
+         <span id="contact"> </span>
+    </form>
+    </body>
+    <script>
+       
+         function myFunction() {
+             var a = document.getElementById("mobilenumber").value;
+            
+            
+            
+              if(a.length==" ") {
+            document.getElementById("contact").innerHTML ="please enter mobile number";
+            return false;
+        }
+        
+             if(a.length>10){
+                 document.getElementById("contact").innerHTML ="please enter valid mobile number";
+                 return false;
+             }    
+         if(a.length<10){
+                 document.getElementById("contact").innerHTML ="please enter valid mobile number";
+                 return false;
+             }    
+             if(isNaN(a)){
+                 document.getElementById("contact").innerHTML ="invalid mobile number";
+                 return false;
+             }
+             if(a[0]!="7" && a[0]!="8" && a[0]!="9" && a[0]!="6"){
+                 document.getElementById("contact").innerHTML ="please enter valid number";
+                 return false;
+             }
+        
+        }
+        
+        
+        
+        
+    </script>
+
+</html>
